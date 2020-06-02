@@ -12,7 +12,7 @@ CREATE TABLE users (
   id              serial primary key,
   name            varchar(100) not null,
   surname         varchar(100) null,
-  login           varchar(50) not null,
+  username        varchar(50) not null,
   password        varchar(32) not null,
   email           varchar(50) null,
   entryDateTime   timestamp null,

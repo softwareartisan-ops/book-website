@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sign Up form
+{% endblock %}
+
+{% block body %}
+ New here? Create an account!
+    <form action="{{ url_for('register') }}" method="post">
+      <div class="form-group">
+          <input class="form-control" name="name" placeholder="Name">
+          <input class="form-control" name="username" placeholder="UserName">
+          <input class="form-control" name="email" type="email" placeholder="Email Address">
+          <input class="form-control" name="password" type="password" placeholder="Create Password">
+      </div>
+
+      <div class="form-group">
+          <button class="btn btn-primary">Sign Up</button>
+          <button type="reset" class="btn btn-outline-secondary">Reset</button>
+      </div>
+
+    </form>
+{% endblock %}
